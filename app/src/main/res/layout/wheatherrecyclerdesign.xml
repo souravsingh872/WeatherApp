@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/idcard"
+        android:layout_margin="20dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/carddesign"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="id"
+               android:layout_marginLeft="10dp"
+               android:textSize="19sp"
+               android:drawableLeft="@drawable/ic_baseline_person_24"
+               android:drawablePadding="10dp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:id="@+id/id"/>
+
+
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/discriptioncard"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/carddesign"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disription"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_description"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/discription"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/tempcard"
+        android:layout_below="@+id/idcard"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/carddesign"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temp"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_hot"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/temp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tempcard"
+        android:id="@+id/speedcard"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/carddesign"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_speedometer"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/speed"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/discriptioncard"
+        android:id="@+id/humiditycard"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/carddesign"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="humidity"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_humidity"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/humidity"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/degcard"
+        android:layout_below="@+id/tempcard"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/carddesign"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deg"
+                android:drawableLeft="@drawable/ic_patent"
+                android:textSize="19sp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/deg"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
